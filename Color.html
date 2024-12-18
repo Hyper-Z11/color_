@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title id="thisTitle">Color... Is... A... Thing...</title>
+    <style>
+      @keyframes invert {
+        0% {
+          background-color: red;
+          color: yellow;
+        }
+        50% {
+          background-color: yellow;,
+          background-color: blue;
+        }
+        100% {
+          background-color: blue;
+          color: red;
+        }
+      }
+      
+      body {
+        font-weight: bold;
+        animation-name: invert;
+        animation-duration: 0.001s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      alert("Color...");
+      alert("Is...");
+      alert("A...");
+      alert("Thing...");
+      
+      let changeTitle = document.getElementById('thisTitle');
+      changeTitle.textContent = "Q29sb3IuLi4gaXMuLi4gYS4uLiB0aGluZy4uLg==";
+      
+      for (let i = 0; i < 1000; i++) {
+        document.write("<h1><center>Q29sb3IuLi4gaXMuLi4gYS4uLiB0aGluZy4uLg==<br />01000011 01101111 01101100 01101111 01110010 00101110 00101110 00101110 00100000 01001001 01110011 00101110 00101110 00101110 00100000 01000001 00101110 00101110 00101110 00100000 01010100 01101000 01101001 01101110 01100111 00101110 00101110 00101110<br />43 6F 6C 6F 72 2E 2E 2E 20 49 73 2E 2E 2E 20 41 2E 2E 2E 20 54 68 69 6E 67 2E 2E 2E</center></h1>");
+      }
+    </script>
+  </body>
+</html>
